@@ -16,7 +16,7 @@
   
 ##  
   
-  <div> 
+  <div align="center"> 
   <a href = "mailto:mlo.siqueira15@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/mateus-lucas-oliveira-siqueira-9135b41a6/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
@@ -32,6 +32,7 @@
 ⚡ Fun fact: ...
 -->
 
+##
 <div align="center">
     
   ![snake gif](https://github.com/TechnologyHell/TechnologyHell/blob/output/github-snake-dark.svg)
