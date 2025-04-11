@@ -8,7 +8,7 @@
   <tr>
     <td valign="top">
       <div class="about-me">
-        <h3>$${\color{green}About Me}$$</h3>
+        <h3>About Me</h3>
         <ul>
           <li>🔭 I'm currently working on Next Gen AI at CI&T</li>
           <li>🌱 I'm currently learning React and AI</li>
