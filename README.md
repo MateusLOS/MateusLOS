@@ -2,12 +2,33 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=font=PP+Fragment+Glare&size=35&center=true&vCenter=true&width=500&color=4AA76B&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Mateus+Siqueira!😎;" />
 </h1>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MateusLOS&theme=gotham&hide_border=true&include_all_commits=true&count_private=true" /> </br>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=MateusLOS&theme=gotham&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=technologyhell&theme=gotham&hide_border=true&include_all_commits=true&count_private=true&layout=compact" width="36%" /> </br>
-</div>
-  
+
+
+<table class="github-stats-table">
+  <tr>
+    <td valign="top">
+      <div class="about-me">
+        <h3>About Me</h3>
+        <ul>
+          <li>🔭 I'm currently working on Next Gen AI at CI&T</li>
+          <li>🌱 I'm currently learning React and AI</li>
+          <li>👯 I'm looking to collaborate on AI ideas</li>
+          <li>⚡ Fun fact: I'm a master at balancing my time between gaming, studying, and programming!</li>
+        </ul>
+        <img src="https://nirzak-streak-stats.vercel.app/?user=MateusLOS&theme=gotham&hide_border=true" alt="Streak Stats" />
+      </div>
+    </td>
+    <td valign="top">
+      <div class="github-stats">
+        <h3 class="github-stats-title">GitHub Stats</h3>
+        <img src="https://github-readme-stats.vercel.app/api?username=MateusLOS&theme=gotham&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+        <br>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MateusLOS&theme=github_dark" alt="Profile Details" />
+      </div>
+    </td>
+  </tr>
+</table>
+
 
 ## 💻 Tech Stack ⚡
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
