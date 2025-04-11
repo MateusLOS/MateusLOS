@@ -31,6 +31,7 @@
 
 
 ## 💻 Tech Stack ⚡
+
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 <img src="./Flow.png" height="28.45" >
 ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
@@ -43,32 +44,28 @@
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=MateusLOS&theme=gotham&no-frame=false&no-bg=true&margin-w=4)
 
-  
-##  
-  
-  <div align="center"> 
-  <a href = "mailto:mlo.siqueira15@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/mateus-lucas-oliveira-siqueira-9135b41a6/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-      
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-</div>
-<!--
-🔭 I’m currently working on ...
-🌱 I’m currently learning ...
-👯 I’m looking to collaborate on ...
-🤔 I’m looking for help with ...
-💬 Ask me about ...
-📫 How to reach me: ...
-😄 Pronouns: ...
-⚡ Fun fact: ...
--->
-
-##
+  ##
 <div align="center">
     
   ![snake gif](https://github.com/TechnologyHell/TechnologyHell/blob/output/github-snake-dark.svg)
 </div>
+
+##  
+  
+  <div align="center"> 
+  
+      
+### ✍️ Random Dev Quote
+  ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark) &nbsp;
+  
+  <a href = "mailto:mlo.siqueira15@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/mateus-lucas-oliveira-siqueira-9135b41a6/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+
+      
+
+</div>
+
+
 
 
 
