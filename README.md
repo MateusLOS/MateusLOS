@@ -11,7 +11,7 @@
         <h3>About Me</h3>
         <ul>
           <li>🔭 I'm currently working on Next Gen AI at CI&T</li>
-          <li>🌱 I'm currently learning React and AI</li>
+          <li>🌱 I'm currently learning AI and Machine Learning</li>
           <li>👯 I'm looking to collaborate on AI ideas</li>
           <li>⚡ Fun fact: I'm a master at balancing my time between gaming, studying, and programming!</li>
         </ul>
