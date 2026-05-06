@@ -1,0 +1,43 @@
+<svg width="100%" viewBox="0 0 680 255" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="16" width="640" height="223" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <rect x="20" y="16" width="640" height="44" rx="10" fill="#161b22"/>
+  <rect x="20" y="44" width="640" height="16" fill="#161b22"/>
+  <circle cx="44" cy="38" r="6" fill="#ff5f57"/>
+  <circle cx="62" cy="38" r="6" fill="#febc2e"/>
+  <circle cx="80" cy="38" r="6" fill="#28c840"/>
+  <text x="340" y="43" text-anchor="middle" font-family="monospace" font-size="13" fill="#c9d1d9" font-weight="600">&#x1F3AE; Steam Live &#x2014; top jogos agora</text>
+  <text x="44" y="80" font-family="monospace" font-size="10" fill="#8b949e">#</text>
+  <text x="68" y="80" font-family="monospace" font-size="10" fill="#8b949e">JOGO</text>
+  <text x="440" y="80" font-family="monospace" font-size="10" fill="#8b949e">JOGADORES</text>
+  <text x="560" y="80" font-family="monospace" font-size="10" fill="#8b949e">DISTRIBUICAO</text>
+  <line x1="40" y1="86" x2="640" y2="86" stroke="#30363d" stroke-width="0.8"/>
+  
+  <text x="44" y="104" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="700">1</text>
+  <text x="68" y="104" font-family="monospace" font-size="11" fill="#e6edf3">Counter-Strike 2</text>
+  <text x="440" y="104" font-family="monospace" font-size="11" fill="#3fb950" font-weight="600">1.2M</text>
+  <rect x="540" y="96" width="90" height="8" rx="4" fill="#21262d"/>
+  <rect x="540" y="96" width="90" height="8" rx="4" fill="#3fb950"/>
+  <text x="44" y="126" font-family="monospace" font-size="11" fill="#8b949e" font-weight="400">2</text>
+  <text x="68" y="126" font-family="monospace" font-size="11" fill="#e6edf3">PUBG: BATTLEGROUNDS</text>
+  <text x="440" y="126" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="600">750k</text>
+  <rect x="540" y="118" width="90" height="8" rx="4" fill="#21262d"/>
+  <rect x="540" y="118" width="54" height="8" rx="4" fill="#388bfd"/>
+  <text x="44" y="148" font-family="monospace" font-size="11" fill="#8b949e" font-weight="400">3</text>
+  <text x="68" y="148" font-family="monospace" font-size="11" fill="#e6edf3">Dota 2</text>
+  <text x="440" y="148" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="600">577k</text>
+  <rect x="540" y="140" width="90" height="8" rx="4" fill="#21262d"/>
+  <rect x="540" y="140" width="42" height="8" rx="4" fill="#388bfd"/>
+  <text x="44" y="170" font-family="monospace" font-size="11" fill="#8b949e" font-weight="400">4</text>
+  <text x="68" y="170" font-family="monospace" font-size="11" fill="#e6edf3">Wallpaper Engine</text>
+  <text x="440" y="170" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="600">114k</text>
+  <rect x="540" y="162" width="90" height="8" rx="4" fill="#21262d"/>
+  <rect x="540" y="162" width="8" height="8" rx="4" fill="#388bfd"/>
+  <text x="44" y="192" font-family="monospace" font-size="11" fill="#8b949e" font-weight="400">5</text>
+  <text x="68" y="192" font-family="monospace" font-size="11" fill="#e6edf3">Apex Legends™</text>
+  <text x="440" y="192" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="600">219k</text>
+  <rect x="540" y="184" width="90" height="8" rx="4" fill="#21262d"/>
+  <rect x="540" y="184" width="16" height="8" rx="4" fill="#388bfd"/>
+  <line x1="40" y1="208" x2="640" y2="208" stroke="#30363d" stroke-width="0.8"/>
+  <text x="44" y="225" font-family="monospace" font-size="9" fill="#6e7681">Steam API + Python + GitHub Actions</text>
+  <text x="636" y="225" text-anchor="end" font-family="monospace" font-size="9" fill="#6e7681">atualizado: 06/05/2026 21:50 UTC</text>
+</svg>

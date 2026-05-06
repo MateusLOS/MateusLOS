@@ -48,18 +48,7 @@
 <br>
 
 <!-- STEAM_LIVE_START -->
-## 🎮 Steam Live — Top jogos agora
-```
-#    Jogo                                Jogadores
-────────────────────────────────────────────────────
-1    Counter-Strike 2                    1.2M
-2    PUBG: BATTLEGROUNDS                 750k
-3    Dota 2                              577k
-4    Wallpaper Engine                    114k
-5    Apex Legends™                       219k
-────────────────────────────────────────────────────
-⚙️  Steam API + Python + GitHub Actions · 06/05/2026 20:38 UTC
-```
+![Steam Live](steam-live.svg)
 <!-- STEAM_LIVE_END -->
 
 ## 🏆 GitHub Trophies
