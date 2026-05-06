@@ -52,7 +52,7 @@
 <!-- STEAM_LIVE_END -->
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=MateusLOS&theme=gotham&no-frame=false&no-bg=true&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=MateusLOS&theme=gotham&no-frame=false&no-bg=true&margin-w=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C)
 
 ##
 

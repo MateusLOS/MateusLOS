@@ -6,6 +6,21 @@ from datetime import datetime
 STEAM_ID = "76561198213538560"
 
 
+def is_game(appid):
+    """Retorna True se o appid for um jogo (não app, tool, etc.)"""
+    try:
+        resp = requests.get(
+            f"https://store.steampowered.com/api/appdetails?appids={appid}&filters=basic",
+            timeout=8,
+        )
+        data = resp.json().get(str(appid), {})
+        if data.get("success"):
+            return data["data"].get("type") == "game"
+    except Exception:
+        pass
+    return True  # assume jogo se não conseguir verificar
+
+
 def fetch_my_games(limit=5):
     api_key = os.environ["STEAM_API_KEY"]
 
@@ -25,31 +40,44 @@ def fetch_my_games(limit=5):
     owned_map = {g["appid"]: g for g in owned}
 
     # tenta jogos recentes (últimas 2 semanas) para saber o que está sendo jogado agora
+    # busca mais candidatos para compensar apps que serão filtrados
     resp_recent = requests.get(
         "https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/",
-        params={"key": api_key, "steamid": STEAM_ID, "count": limit},
+        params={"key": api_key, "steamid": STEAM_ID, "count": 20},
         timeout=10,
     )
     resp_recent.raise_for_status()
     recent = resp_recent.json().get("response", {}).get("games", [])
 
     if recent:
-        # ordena pelo mais jogado nas últimas 2 semanas, mas exibe horas totais
-        top = sorted(recent, key=lambda g: g.get("playtime_2weeks", 0), reverse=True)[:limit]
+        sorted_recent = sorted(recent, key=lambda g: g.get("playtime_2weeks", 0), reverse=True)
         results = []
-        for g in top:
+        for g in sorted_recent:
+            if not is_game(g["appid"]):
+                print(f"  [filtrado] {g.get('name', g['appid'])} — não é jogo")
+                continue
             owned_entry = owned_map.get(g["appid"], {})
             total = owned_entry.get("playtime_forever", g.get("playtime_forever", 0))
             name = owned_entry.get("name", g.get("name", f"AppID {g['appid']}"))
             results.append({"name": name[:24], "playtime": total})
-        return results, "recent"
+            if len(results) == limit:
+                break
+        if results:
+            return results, "recent"
 
-    # fallback: top jogos por horas totais de todos os tempos
-    top = sorted(owned, key=lambda g: g.get("playtime_forever", 0), reverse=True)[:limit]
-    return [
-        {"name": g.get("name", f"AppID {g['appid']}")[:24], "playtime": g.get("playtime_forever", 0)}
-        for g in top
-    ], "alltime"
+    # fallback: top jogos por horas totais, filtrando apps/tools
+    sorted_owned = sorted(owned, key=lambda g: g.get("playtime_forever", 0), reverse=True)
+    results = []
+    for g in sorted_owned:
+        if not is_game(g["appid"]):
+            continue
+        results.append({
+            "name": g.get("name", f"AppID {g['appid']}")[:24],
+            "playtime": g.get("playtime_forever", 0),
+        })
+        if len(results) == limit:
+            break
+    return results, "alltime"
 
 
 def format_playtime(minutes):
