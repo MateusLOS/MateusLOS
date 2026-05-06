@@ -15,7 +15,6 @@
           <li>👯 I'm looking to collaborate on AI ideas</li>
           <li>⚡ Fun fact: I'm a master at balancing my time between gaming, studying, and programming!</li>
         </ul>
-        <img src="https://nirzak-streak-stats.vercel.app/?user=MateusLOS&theme=gotham&hide_border=true" alt="Streak Stats" />
       </div>
     </td>
     <td valign="top">
