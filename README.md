@@ -47,6 +47,9 @@
 
 <br>
 
+<!-- STEAM_LIVE_START -->
+<!-- STEAM_LIVE_END -->
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=MateusLOS&theme=gotham&no-frame=false&no-bg=true&margin-w=4)
 
