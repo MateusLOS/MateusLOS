@@ -13,7 +13,7 @@ def fetch_top_steam_games(limit=5):
     results = []
     for game in games:
         appid = game["appid"]
-        players = game["concurrent_in_game"]
+        players = game.get("concurrent_in_game") or game.get("peak_in_game", 0)
 
         name_url = f"https://store.steampowered.com/api/appdetails?appids={appid}&filters=basic"
         try:
