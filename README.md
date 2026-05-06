@@ -1,25 +1,21 @@
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=PP+Fragment+Glare&size=35&center=true&vCenter=true&width=500&color=4AA76B&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Mateus+Siqueira!+🤖;" />
 </h1>
+<br>
 
-<table>
-  <tr>
-    <td valign="top" width="55%">
-      <h3>About Me</h3>
-      <ul>
-        <li>🚀 Building AI & LLM solutions in production at <strong>CI&T</strong> (banking sector)</li>
-        <li>🎮 Passionate about applying ML to games and interactive entertainment</li>
-        <li>🔍 Currently focused on <strong>recommender systems</strong> and <strong>NLP</strong></li>
-        <li>⚡ I don't just use LLMs — I build pipelines with them at scale</li>
-        <li>🌍 Looking for opportunities in <strong>AI Engineering</strong> and <strong>Machine Learning</strong></li>
-      </ul>
-    </td>
-    <td valign="top" width="45%">
-      <h3>GitHub Stats</h3>
-      <br>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MateusLOS&theme=github_dark" alt="Profile Details" />
-    </td>
-  </tr>
+<div align="center">
+
+🚀 Building AI & LLM solutions in production at **CI&T** · banking sector
+
+🎮 Passionate about applying ML to games and interactive entertainment
+
+🔍 Currently focused on **recommender systems** and **NLP**
+
+⚡ I don't just use LLMs — I build pipelines with them at scale
+
+🌍 Open to opportunities in **AI Engineering** and **Machine Learning**
+
+</div>
 </table>
 
 <br>
