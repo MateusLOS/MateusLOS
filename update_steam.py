@@ -9,24 +9,8 @@ STEAM_ID = "76561198213538560"
 def fetch_my_games(limit=5):
     api_key = os.environ["STEAM_API_KEY"]
 
-    # tenta jogos recentes (últimas 2 semanas)
-    resp = requests.get(
-        "https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/",
-        params={"key": api_key, "steamid": STEAM_ID, "count": limit},
-        timeout=10,
-    )
-    resp.raise_for_status()
-    recent = resp.json().get("response", {}).get("games", [])
-
-    if recent:
-        top = sorted(recent, key=lambda g: g.get("playtime_2weeks", 0), reverse=True)[:limit]
-        return [
-            {"name": g["name"][:24], "playtime": g.get("playtime_2weeks", 0)}
-            for g in top
-        ], "recent"
-
-    # fallback: todos os jogos ordenados por tempo total
-    resp = requests.get(
+    # busca biblioteca completa com horas totais
+    resp_owned = requests.get(
         "https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/",
         params={
             "key": api_key,
@@ -36,10 +20,32 @@ def fetch_my_games(limit=5):
         },
         timeout=10,
     )
-    resp.raise_for_status()
-    owned = resp.json().get("response", {}).get("games", [])
-    top = sorted(owned, key=lambda g: g.get("playtime_forever", 0), reverse=True)[:limit]
+    resp_owned.raise_for_status()
+    owned = resp_owned.json().get("response", {}).get("games", [])
+    owned_map = {g["appid"]: g for g in owned}
 
+    # tenta jogos recentes (últimas 2 semanas) para saber o que está sendo jogado agora
+    resp_recent = requests.get(
+        "https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/",
+        params={"key": api_key, "steamid": STEAM_ID, "count": limit},
+        timeout=10,
+    )
+    resp_recent.raise_for_status()
+    recent = resp_recent.json().get("response", {}).get("games", [])
+
+    if recent:
+        # ordena pelo mais jogado nas últimas 2 semanas, mas exibe horas totais
+        top = sorted(recent, key=lambda g: g.get("playtime_2weeks", 0), reverse=True)[:limit]
+        results = []
+        for g in top:
+            owned_entry = owned_map.get(g["appid"], {})
+            total = owned_entry.get("playtime_forever", g.get("playtime_forever", 0))
+            name = owned_entry.get("name", g.get("name", f"AppID {g['appid']}"))
+            results.append({"name": name[:24], "playtime": total})
+        return results, "recent"
+
+    # fallback: top jogos por horas totais de todos os tempos
+    top = sorted(owned, key=lambda g: g.get("playtime_forever", 0), reverse=True)[:limit]
     return [
         {"name": g.get("name", f"AppID {g['appid']}")[:24], "playtime": g.get("playtime_forever", 0)}
         for g in top
