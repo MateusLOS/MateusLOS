@@ -39,5 +39,5 @@
   <rect x="500" y="184" width="2" height="8" rx="4" fill="#388bfd"/>
   <line x1="40" y1="208" x2="640" y2="208" stroke="#30363d" stroke-width="0.8"/>
   <text x="44" y="225" font-family="monospace" font-size="9" fill="#6e7681">Steam API + Python + GitHub Actions</text>
-  <text x="636" y="225" text-anchor="end" font-family="monospace" font-size="9" fill="#6e7681">atualizado: 08/05/2026 15:14 UTC</text>
+  <text x="636" y="225" text-anchor="end" font-family="monospace" font-size="9" fill="#6e7681">atualizado: 08/05/2026 17:04 UTC</text>
 </svg>
