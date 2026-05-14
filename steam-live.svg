@@ -14,7 +14,7 @@
   
   <text x="44" y="104" font-family="monospace" font-size="11" fill="#58a6ff" font-weight="700">1</text>
   <text x="68" y="104" font-family="monospace" font-size="11" fill="#e6edf3">DSX</text>
-  <text x="440" y="104" font-family="monospace" font-size="11" fill="#3fb950" font-weight="600">5143h</text>
+  <text x="440" y="104" font-family="monospace" font-size="11" fill="#3fb950" font-weight="600">5145h</text>
   <rect x="500" y="96" width="90" height="8" rx="4" fill="#21262d"/>
   <rect x="500" y="96" width="90" height="8" rx="4" fill="#3fb950"/>
   <text x="44" y="126" font-family="monospace" font-size="11" fill="#8b949e" font-weight="400">2</text>
@@ -34,5 +34,5 @@
   <rect x="500" y="162" width="2" height="8" rx="4" fill="#388bfd"/>
   <line x1="40" y1="208" x2="640" y2="208" stroke="#30363d" stroke-width="0.8"/>
   <text x="44" y="225" font-family="monospace" font-size="9" fill="#6e7681">Steam API + Python + GitHub Actions</text>
-  <text x="636" y="225" text-anchor="end" font-family="monospace" font-size="9" fill="#6e7681">atualizado: 14/05/2026 13:49 UTC</text>
+  <text x="636" y="225" text-anchor="end" font-family="monospace" font-size="9" fill="#6e7681">atualizado: 14/05/2026 16:06 UTC</text>
 </svg>
